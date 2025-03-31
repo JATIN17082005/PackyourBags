@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form - Leh-Ladakh</title>
+    <style>
+        body {
+            font-family: 'Garamond', serif;
+            margin: 0;
+            padding: 0;
+            background: #e0ddbd;
+            color: gold;
+            text-align: center;
+        }
+        .navbar {
+            background: #004d99;
+            padding: 20px;
+            color: gold;
+            font-size: 2em;
+            font-weight: bold;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .form-container {
+            margin: 100px auto;
+            background: #003366;
+            padding: 30px;
+            border-radius: 15px;
+            width: 50%;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-size: 1.2em;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            font-size: 1em;
+        }
+        .submit-btn {
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 1.2em;
+            background: gold;
+            color: black;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-weight: bold;
+            letter-spacing: 1px;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            background: darkorange;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="web_project_2.html"><image src="logo.png" height="80"></image></a>
+        
+    </div>
+    <br>
+    <br>
+    <div class="form-container">
+        <form>
+            <label for="full-name" required>Full Name:</label>
+            <input type="text" id="full-name " name="full-name" required>
+            <label for="full-name" required>Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+            <label for="dob" required>Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="from-date">From (Date & Time):</label>
+            <input type="datetime-local" id="from-date" name="from-date" required>
+
+            <label for="to-date">To (Date & Time):</label>
+            <input type="datetime-local" id="to-date" name="to-date" required>
+
+            <label for="package-type">Trip Packages:</label>
+            <select id="package-type" name="package-type" required>
+                <option value="none">None</option>
+                <option value="basic">Basic</option>
+                <option value="comfy">Comfy</option>
+                <option value="premium">Premium</option>
+            </select>
+
+            <label for="num-persons">Number of Persons:</label>
+            <select id="num-persons" name="num-persons" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <button type="submit" class="submit-btn" onclick="window.location.href='booking1.html'" >Submit</button>
+        </form>
+    </div>
+</body>
+</html>
