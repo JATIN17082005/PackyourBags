@@ -1,1 +1,0 @@
-alert("This website may be full of mistakes.")
